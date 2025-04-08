@@ -343,8 +343,10 @@ section {
 
 article {
   display: flex;
-  width: 10rem;
-  justify-content: space-around;
+  align-items: center;
+  width: auto; /* ✅ change ici */
+  min-width: 250px; /* ✅ laisse la place au texte long */
+  white-space: nowrap; /* ✅ empêche le retour à la ligne */
   gap: 0.5rem;
 }
 
